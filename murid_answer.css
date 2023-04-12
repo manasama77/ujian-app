@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("img/OF18H90.jpg") repeat center -100px fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 45vh;
+  grid-auto-rows: 45vh;
+  grid-gap: 20px;
+}
+
+.col {
+  margin-top: 10px;
+}
+.col .btn-pg {
+  text-align: left;
+  font-size: 22px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 0px 0px inset;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: white;
+  fill: white;
+  transition: box-shadow 0.2s ease 0s, background 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+.col .btn-pg .simbol {
+  display: inline-block;
+  width: calc(7vmin - 1px);
+  max-width: 100%;
+  max-height: 100%;
+}
+.col .btn-pg-red {
+  background-color: rgb(226, 27, 60);
+}
+.col .btn-pg-red:active {
+  background-color: rgb(175, 19, 45);
+}
+.col .btn-pg-blue {
+  background-color: rgb(19, 104, 206);
+}
+.col .btn-pg-blue:active {
+  background-color: rgb(16, 85, 169);
+}
+.col .btn-pg-yellow {
+  background-color: rgb(216, 158, 0);
+}
+.col .btn-pg-yellow:active {
+  background-color: rgb(170, 124, 1);
+}
+.col .btn-pg-green {
+  background-color: rgb(38, 137, 12);
+}
+.col .btn-pg-green:active {
+  background-color: rgb(28, 103, 10);
+}
+
+#game-info {
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=murid_answer.css.map */
