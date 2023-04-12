@@ -20,11 +20,25 @@
     <link rel="stylesheet" href="slide_1.css" />
   </head>
   <body>
+    <section id="timer">
+      <p>30</p>
+    </section>
+
+    <section id="answer">
+      <p><i class="fa-solid fa-user"></i> 20</p>
+    </section>
+
     <section id="pertanyaan">
+      <section id="next">
+        <a href="slide_2.html" class="btn btn-success btn-lg">
+          <i class="fa-solid fa-forward-step"></i>
+          NEXT
+        </a>
+      </section>
       <div class="d-flex flex-column justify-content-center">
         <div class="pertanyaan-text">
-          {Ini adalah text pertanyaan yang sangat panjang sekali. Pokoknya ini
-          soalnya panjang banget dah...}
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+          eius quo quia, officia facere qui ipsa fugiat minus e
         </div>
         <div class="pertanyaan-media">
           <iframe
@@ -41,62 +55,108 @@
             alt=""
           /> -->
         </div>
-        <div class="btn-next">
+        <!-- <div class="btn-next">
           <a href="slide_2.html" class="btn btn-info btn-lg">NEXT</a>
-        </div>
+        </div> -->
       </div>
     </section>
     <section id="container-pilihan-ganda">
       <div class="wrapper-pilihan-ganda">
         <div class="row m-2">
           <div class="col-6 mb-1">
-            <button type="button" class="btn btn-pg btn-pg-red">
-              <span class="simbol">
-                <svg
-                  viewBox="0 0 32 32"
-                  focusable="false"
-                  stroke="rgba(0, 0, 0, 0.15)"
-                  stroke-width="1.3px"
-                  aria-labelledby="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd"
-                  aria-hidden="true"
-                  class="sc-jSgupP kWFXVA"
-                  style="paint-order: stroke"
-                >
-                  <title id="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd">
-                    Icon
-                  </title>
-                  <path
-                    d="M27,24.559972 L5,24.559972 L16,7 L27,24.559972 Z"
-                    style="fill: inherit"
-                  ></path>
-                </svg>
-              </span>
-              Jawaban Pertama
-            </button>
+            <span class="btn btn-pg btn-pg-red">
+              <div class="d-flex justify-content-start">
+                <div>
+                  <span class="simbol">
+                    <svg
+                      viewBox="0 0 32 32"
+                      focusable="false"
+                      stroke="rgba(0, 0, 0, 0.15)"
+                      stroke-width="1.3px"
+                      aria-labelledby="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd"
+                      aria-hidden="true"
+                      class="sc-jSgupP kWFXVA"
+                      style="paint-order: stroke"
+                    >
+                      <title id="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd">
+                        Icon
+                      </title>
+                      <path
+                        d="M27,24.559972 L5,24.559972 L16,7 L27,24.559972 Z"
+                        style="fill: inherit"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <div>
+                  <p class="ms-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto fugit p
+                  </p>
+                </div>
+              </div>
+            </span>
           </div>
           <div class="col-6 mb-1">
             <button type="button" class="btn btn-pg btn-pg-blue">
-              <span class="simbol">
-                <svg
-                  viewBox="0 0 32 32"
-                  focusable="false"
-                  stroke="rgba(0, 0, 0, 0.15)"
-                  stroke-width="1.3px"
-                  aria-labelledby="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd"
-                  aria-hidden="true"
-                  class="sc-jSgupP kWFXVA"
-                  style="paint-order: stroke"
-                >
-                  <title id="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd">
-                    Icon
-                  </title>
-                  <path
-                    d="M27,24.559972 L5,24.559972 L16,7 L27,24.559972 Z"
-                    style="fill: inherit"
-                  ></path>
-                </svg>
-              </span>
-              Jawaban Kedua
+              <div class="d-flex justify-content-start">
+                <div>
+                  <span class="simbol">
+                    <svg
+                      viewBox="0 0 32 32"
+                      focusable="false"
+                      stroke="rgba(0, 0, 0, 0.15)"
+                      stroke-width="1.3px"
+                      aria-labelledby="label-68efe9f2-620f-4ce2-bc19-a4d2896a395b"
+                      aria-hidden="true"
+                      class="sc-jSUZER eTaWgc"
+                      style="paint-order: stroke"
+                    >
+                      <title id="label-68efe9f2-620f-4ce2-bc19-a4d2896a395b">
+                        Icon
+                      </title>
+                      <path
+                        d="M4,16.0038341 L16,4 L28,16.0007668 L16,28 L4,16.0038341 Z"
+                        style="fill: inherit"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <div>
+                  <p class="ms-2">Jawaban Kedua</p>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col-6 mb-1">
+            <button type="button" class="btn btn-pg btn-pg-yellow">
+              <div class="d-flex justify-content-start">
+                <div>
+                  <span class="simbol">
+                    <svg
+                      viewBox="0 0 32 32"
+                      focusable="false"
+                      stroke="rgba(0, 0, 0, 0.15)"
+                      stroke-width="1.3px"
+                      aria-labelledby="label-e8b1baf4-1784-4c54-b7bb-cb149fb7fc8d"
+                      aria-hidden="true"
+                      class="sc-jSUZER eTaWgc"
+                      style="paint-order: stroke"
+                    >
+                      <title id="label-e8b1baf4-1784-4c54-b7bb-cb149fb7fc8d">
+                        Icon
+                      </title>
+                      <path
+                        d="M16,27 C9.92486775,27 5,22.0751322 5,16 C5,9.92486775 9.92486775,5 16,5 C22.0751322,5 27,9.92486775 27,16 C27,22.0751322 22.0751322,27 16,27 Z"
+                        style="fill: inherit"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <div>
+                  <p class="ms-2">Jawaban Ketiga</p>
+                </div>
+              </div>
             </button>
           </div>
           <div class="col-6 mb-1">
@@ -107,47 +167,42 @@
                   focusable="false"
                   stroke="rgba(0, 0, 0, 0.15)"
                   stroke-width="1.3px"
-                  aria-labelledby="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd"
+                  aria-labelledby="label-ad6ce6ea-3322-4301-878c-87b5d95f6930"
                   aria-hidden="true"
-                  class="sc-jSgupP kWFXVA"
+                  class="sc-jSUZER eTaWgc"
                   style="paint-order: stroke"
                 >
-                  <title id="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd">
+                  <title id="label-ad6ce6ea-3322-4301-878c-87b5d95f6930">
                     Icon
                   </title>
                   <path
-                    d="M27,24.559972 L5,24.559972 L16,7 L27,24.559972 Z"
-                    style="fill: inherit"
-                  ></path>
-                </svg>
-              </span>
-              Jawaban Ketiga
-            </button>
-          </div>
-          <div class="col-6 mb-1">
-            <button type="button" class="btn btn-pg btn-pg-purple">
-              <span class="simbol">
-                <svg
-                  viewBox="0 0 32 32"
-                  focusable="false"
-                  stroke="rgba(0, 0, 0, 0.15)"
-                  stroke-width="1.3px"
-                  aria-labelledby="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd"
-                  aria-hidden="true"
-                  class="sc-jSgupP kWFXVA"
-                  style="paint-order: stroke"
-                >
-                  <title id="label-ef2bd6b9-8686-4e47-8d2e-df154f25e3bd">
-                    Icon
-                  </title>
-                  <path
-                    d="M27,24.559972 L5,24.559972 L16,7 L27,24.559972 Z"
+                    d="M7,7 L25,7 L25,25 L7,25 L7,7 Z"
                     style="fill: inherit"
                   ></path>
                 </svg>
               </span>
               Jawaban Keempat
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="game-info">
+      <div class="d-flex justify-content-between">
+        <div>
+          <span>1/2</span>
+        </div>
+        <div>
+          <span>GAME PIN: <span id="game-pin">1234 5678</span></span>
+        </div>
+        <div>
+          <div
+            class="button-fullscreen"
+            role="button"
+            onclick="toggleFullscreen()"
+          >
+            <i class="fa-solid fa-expand"></i>
           </div>
         </div>
       </div>

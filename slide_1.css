@@ -17,13 +17,52 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: url("img/quiz-bg.png") no-repeat center -45px fixed;
+  background: url("img/OF18H90.jpg") repeat center -100px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
   position: relative;
+}
+
+#timer {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#answer {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#next {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  z-index: 1;
 }
 
 .btn-next-wrapper .btn-next {
@@ -35,10 +74,13 @@ body {
 #pertanyaan {
   position: relative;
   width: 89vw;
-  top: 40px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(46, 46, 46, 0.95);
 }
 #pertanyaan .pertanyaan-text {
   font-size: 30px;
@@ -54,17 +96,17 @@ body {
 #pertanyaan .pertanyaan-media iframe,
 #pertanyaan .pertanyaan-media img {
   width: auto;
-  height: 350px;
+  height: calc(100vh - 420px);
 }
 #pertanyaan .pertanyaan-media iframe {
   aspect-ratio: 16/9;
 }
 
 #container-pilihan-ganda {
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 50%;
-  bottom: 0px;
+  top: calc(100vh - 250px);
   transform: translateX(-50%);
   margin: 0 auto;
 }
@@ -73,10 +115,10 @@ body {
 }
 #container-pilihan-ganda .wrapper-pilihan-ganda .btn-pg {
   text-align: left;
-  font-size: 24px;
+  font-size: 22px;
   width: 100%;
   max-width: 100%;
-  min-height: 3.2vmin;
+  min-height: 11vmin;
   margin: 0px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 0px 0px inset;
   border-top: 2px solid rgba(0, 0, 0, 0.2);
@@ -94,51 +136,36 @@ body {
   max-height: 100%;
 }
 #container-pilihan-ganda .wrapper-pilihan-ganda .btn-pg-red {
-  background-color: red;
+  background-color: rgb(226, 27, 60);
 }
 #container-pilihan-ganda .wrapper-pilihan-ganda .btn-pg-blue {
-  background-color: blue;
+  background-color: rgb(19, 104, 206);
+}
+#container-pilihan-ganda .wrapper-pilihan-ganda .btn-pg-yellow {
+  background-color: rgb(216, 158, 0);
 }
 #container-pilihan-ganda .wrapper-pilihan-ganda .btn-pg-green {
-  background-color: green;
+  background-color: rgb(38, 137, 12);
+}
+#container-pilihan-ganda .wrapper-pilihan-ganda .btn-pg-ocean {
+  background-color: rgb(10, 163, 163);
 }
 #container-pilihan-ganda .wrapper-pilihan-ganda .btn-pg-purple {
-  background-color: purple;
+  background-color: rgb(134, 76, 191);
 }
 
-#container-utility {
-  position: relative;
-  display: block;
-}
-#container-utility .wrapper-utility {
+#game-info {
   position: absolute;
-  top: 20px;
-  right: 20px;
-}
-#container-utility .wrapper-utility .jumlah-peserta {
-  background-color: rgba(75, 75, 75, 0.7);
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: whitesmoke;
-  padding: 10px;
-  text-align: center;
-  font-size: 24px;
+  bottom: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  font-size: 18px;
   font-weight: 700;
-  width: 100px;
-}
-#container-utility .wrapper-utility .button-fullscreen {
-  background-color: rgba(75, 75, 75, 0.7);
-  border-radius: 5px;
-  box-sizing: border-box;
   color: whitesmoke;
-  padding: 10px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-  width: 80px;
-}
-#container-utility .wrapper-utility .button-fullscreen:hover {
-  background-color: rgba(75, 75, 75, 0.9);
 }
 
 /*# sourceMappingURL=slide_1.css.map */
